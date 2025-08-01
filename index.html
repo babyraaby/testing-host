@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Zahra Store Books</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0d0d2b, #1a1a40);
+      color: #0ff;
+    }
+
+    header {
+      background: #000c33;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 10px #0ff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      padding: 30px;
+    }
+
+    form {
+      background: #000a1a;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px #0ff, inset 0 0 30px #0ff4;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px #0ff;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 10px;
+      background: #001a33;
+      color: #0ff;
+      box-shadow: inset 0 0 10px #0ff4;
+    }
+
+    input:focus {
+      background: #003355;
+      outline: none;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    .gender {
+      margin-top: 15px;
+    }
+
+    .gender label {
+      margin-right: 10px;
+      font-size: 0.9rem;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+      accent-color: #0ff;
+    }
+
+    input[type="submit"] {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: #0ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    input[type="submit"]:hover {
+      background: #00ccbb;
+      box-shadow: 0 0 30px #0ff;
+    }
+
+    footer {
+      background: #000c33;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85rem;
+      color: #0ff;
+      box-shadow: 0 -2px 10px #0ff;
+    }
+
+    footer a {
+      color: #0ff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zahra Store Books</h1>
+    <p>Toko buku digital terbaik untuk pelajar dan umum</p>
+  </header>
+
+  <main>
+    <form>
+      <h2>Formulir Pendaftaran</h2>
+
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama"  required />
+
+      <label for="email">Alamat Email</label>
+      <input type="email" id="email" required />
+
+      <label for="pass">Kata Sandi</label>
+      <input type="password" id="pass" required />
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Pria" /> Pria</label>
+        <label><input type="radio" name="gender" value="Wanita" /> Wanita</label>
+      </div>
+
+      <input type="submit" value="Daftar Sekarang" />
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Zahra Store Books. All rights reserved. | 
+    <a href="#">Kebijakan Privasi</a> | 
+    <a href="#">Hubungi Kami</a>
+  </footer>
+
+</body>
+</html>
